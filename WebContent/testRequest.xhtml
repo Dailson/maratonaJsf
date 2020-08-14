@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+	<h:body>
+		<h:form>
+
+			<h1>
+				<h:outputLabel value="Request Scoped" />
+				<br />
+			</h1>
+
+			<h:outputText value="List of category" />
+			<br />
+			<h:outputLabel value="#{testRequestBean.categories}" />
+			<br />
+			<br />
+			<h:commandButton value="Select Category"
+				actionListener="#{testRequestBean.selectCategory}" />
+			<br />
+			<br />
+			<h:outputText value="Selected Category" />
+			<br />
+			<h:outputLabel value="#{testRequestBean.categorySelected}" />
+		</h:form>
+	</h:body>
+</h:head>
+</html>
